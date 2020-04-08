@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\assign\\assign.csproj",
+      "projectUniqueName": "C:\\mlt\\assign\\assign.csproj",
       "projectName": "assign",
-      "projectPath": "C:\\assign\\assign.csproj",
+      "projectPath": "C:\\mlt\\assign\\assign.csproj",
       "packagesPath": "C:\\Users\\00005258\\.nuget\\packages\\",
-      "outputPath": "C:\\assign\\obj\\",
+      "outputPath": "C:\\mlt\\assign\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "\\\\S-MTN-001\\PROFILES$\\00005258\\AppData\\W7\\NuGet\\NuGet.Config"
