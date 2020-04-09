@@ -20,9 +20,24 @@ namespace assign.Controllers
 
         public IActionResult Index()
         {
+            if (Request.Method == "Post") {
+        string item = Request.Form["item"];
+        string quantity = Request.Form["quantity"];
+        string price = Request.Form["price"];
+            }
+            return View();
+        }
+        public IActionResult addItem()
+        {
+            
             return View();
         }
 
+        public IActionResult displayOrderNumber()
+        {
+            
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

@@ -1,11 +1,13 @@
 ﻿
 @{
     ViewData["Title"] = "Home Page";
+
 }
 
 <div class="text-center">
-   <!-- <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>-->
+  <!--  <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Hello world, the time on the server is @DateTime.Now</p>-->
     <form method="post" id="orderForm">
         <table width="100%">
         <td>Name</td>
@@ -28,10 +30,11 @@
             <span class="field-validation-valid" data-valmsg-for="price" data-valmsg-replace="true"></span>
         </td>
         <td>
-            <input type="submit" name="add" value="Add"/>
+            <input type="submit" name="add" value="Add" onclick="addItem()"/>
         </td>
         </table>
-        <table width="75%">
+        <p/>
+        <table width="75%" align="left">
             <tr>
             <th width="45%">Name</th>
             <th width="20%">Quantity</th>
@@ -44,7 +47,7 @@
             </tr>
         </table>
         <p/>
-        <table>
+        <table align="left">
             <tr>
                 <td>Subtotal:</td>
                 <td>$0.00</td>
@@ -53,11 +56,20 @@
             <td>Tax:</td>
             <td>$0.00</td>
         </tr>
+        <tr>
             <td>Total:</td>
             <td>$0.00</td>
-        <td>
-        <span><input type="submit" name="submitorder" value="Submit"></span>
-        </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <b>Your order has been received. Your order number is </b>
+            </td>
+            <td>
+                <span><input type="submit" name="submitorder" onClick="displayOrderNumber()" value="Submit"></span>
+            </td>
+        </tr>
+        
         </table>
     </form>
 </div>
